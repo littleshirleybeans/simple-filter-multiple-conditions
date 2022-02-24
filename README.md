@@ -18,11 +18,12 @@
 3. 遍历过滤器，生成筛选后的数组
     
     ```jsx
+    let filteredArray = array;
     filter.forEach(item => {
         if (item.type) {
-          filteredPrograms = filteredPrograms.filter(program => program[item.type] === item.text);
+          filteredArray = filteredArray.filter(array => array[item.type] === item.text);
         }
-      });
+    });
     ```
     
 4. 渲染经过筛选后的数组
