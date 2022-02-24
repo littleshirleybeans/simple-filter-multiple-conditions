@@ -106,7 +106,7 @@ function handleFilter(className, condition) {
     return;
   }
 
-  // if the condition with the same type already exists, handle the condition
+  // if the condition with the same type already exists, overwrite it with the new one
   filter = filter.filter(item => item.type !== className);
   // put the condition into filter
   filter.push({
