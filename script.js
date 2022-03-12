@@ -146,7 +146,7 @@ function detectEvents(conditionList) {
       }
 
       // extract the className we want
-      let className = condition.className.split(' ').find(c => c !== 'item');
+      let className = condition.dataset.type;
 
       handleFilter(className, condition);
       // console.log(filter);
